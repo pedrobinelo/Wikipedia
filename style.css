@@ -1,0 +1,144 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ul { list-style: none; padding-left: 5px; }
+a { color:blue; text-decoration: none;}
+.bar {
+    background-color: #f9f9fb;
+    padding:15px;
+    border-top: solid 1px #cdcdcd;
+    border-bottom: solid 1px #cdcdcd;
+}
+.content {
+    max-width: 1440px;
+    margin: auto;
+    grid-gap: 3rem;
+    display: grid;
+    gap: 3rem;
+    grid-template-areas: "sidebar main anchors";
+    grid-template-columns: minmax(0,15rem) minmax(0,2.5fr) minmax(0,15rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.footer {
+    min-height: 100px;
+    border-top: solid 1px #cdcdcd;
+}
+.anchors {
+    border-left: solid 1px #cdcdcd;
+    padding-left: 15px;
+}
+.sidebar {
+    border-right: solid 1px #cdcdcd;
+}
+figure {
+    text-align: center;
+}
+header {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente os itens */
+    justify-content: space-between;
+    padding: 10px 20px; /* Ajuste conforme necessário */
+    background-color: white; /* Cor de fundo do cabeçalho */
+}
+
+.logo {
+    margin-right: 20px; /* Espaçamento entre o logotipo e o título */
+}
+ ul {
+    list-style: none; /* Remover marcadores de lista */
+    padding: 0; /* Remover preenchimento padrão */
+}
+
+nav ul li {
+    margin-right: 20px; /* Espaçamento entre os itens */
+    display: inline-block;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none; /* Remover sublinhado padrão */
+    color: #333; /* Cor do texto dos links */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: bold; /* Negrito */
+    transition: color 0.3s; /* Transição suave para mudança de cor */
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    color: #FF4500; /* Cor do texto dos links ao passar o mouse */
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li:hover > .submenu {
+    display: block;
+    opacity: 1;
+}
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.submenu li {
+    display: block;
+}
+nav ul li .submenu {
+    z-index: 999; /* ou qualquer outro número alto */
+}
+.anchors h2 {
+    color: #333; /* Cor do título */
+}
+
+.anchors ul li a {
+    color: #666; /* Cor dos links */
+}
+
+.anchors ul li a:hover {
+    color: #FF4500; /* Cor dos links ao passar o mouse */
+}
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #FF4500;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #ddd;
+}
+
